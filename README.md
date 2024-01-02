@@ -47,7 +47,7 @@ The Docker container includes a Python HTTP application (app.py) with two REST A
   - ```cd DockerizedApplication```
 - build a docker image:
   - ```docker build --tag python-docker .```
-- run the image in detaced mode and bind port 500:
+- run the image in detached mode and bind port 500:
   - ```docker run -d -p 5000:5000 python-docker```
 
 
