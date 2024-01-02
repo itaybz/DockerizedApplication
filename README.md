@@ -28,8 +28,6 @@ The Docker container includes a Python HTTP application (app.py) with two REST A
 
 - **Endpoint:** `/restore`
 - **HTTP Method:** `GET`
-- **Query Parameter:**
-  - restores the last result
 
 **Example**
 - bash enrty: ```curl http://127.0.0.1:5000/restore```
