@@ -45,14 +45,15 @@ The Docker container includes a Python HTTP application (app.py) with two REST A
 ### Setup ###
 - clone the repository: 
   - ```git clone https://github.com/itaybz/DockerizedApplication.git```
-  - ```cd dDockerizedApplication```
-- install the required Python packages:
-  - ```pip install -r requirements.txt```
+- navigate to folder:
+  - ```cd DockerizedApplication```
+- build a docker image:
+  - ```docker build --tag python-docker .```
+- run the image in detaced mode and bind port 500:
+  - ```docker run -d -p 5000:5000 python-docker```
 
 
 ### Running Tests ###
-- build the docker container:
-  - ```docker build -t app-container .```
 - execution:
   - ```pytest test_api.py```
 - expectancy: 
