@@ -44,7 +44,7 @@ The Docker container includes a Python HTTP application (app.py) with two REST A
 
 ### Setup ###
 - clone the repository: 
-  - ```git clone https://github.com/itaybz/NeuReality.git```
+  - ```git clone https://github.com/itaybz/DockerizedApplication.git```
   - ```cd dockerized-app-testing-framework```
 - install the required Python packages:
   - ```pip install -r requirements.py```
