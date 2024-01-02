@@ -14,6 +14,7 @@ The Docker container includes a Python HTTP application (app.py) with two REST A
 
 #### API 1: /reverse
 
+- **Functionality: API will return the string reversed**
 - **Endpoint:** `/reverse`
 - **HTTP Method:** `GET`
 - **Query Parameter:**
@@ -23,9 +24,9 @@ The Docker container includes a Python HTTP application (app.py) with two REST A
 - bash enrty: ```curl http://127.0.0.1:5000/reverse?in=The%20quick%20brown%20fox%20jumps%20over%20the%20lazy%20dog```
 - bash expectancy: ```{"result":"dog lazy the over jumps fox brown quick The"}```
 
-
 #### API 2: /restore
 
+- **Functionality: The API will return the last result from API 1**
 - **Endpoint:** `/restore`
 - **HTTP Method:** `GET`
 
@@ -41,27 +42,28 @@ The Docker container includes a Python HTTP application (app.py) with two REST A
 
 
 ### Setup ###
-- clone the repository: 
+- Clone the repository: 
   - ```git clone https://github.com/itaybz/DockerizedApplication.git```
-- navigate to folder:
+- Navigate to folder:
   - ```cd DockerizedApplication```
-- build a docker image:
+- Build a docker image:
   - ```docker build --tag python-docker .```
-- run the image in detached mode and bind port 500:
+- Run the image in detached mode and bind port 5000:
   - ```docker run -d -p 5000:5000 python-docker```
 
 
 ### Running Tests ###
-- execution:
+- Execution:
   - ```pytest test_api.py```
-- expectancy: 
-  - no asserts are shown
-  - docker logs <container id> that depict requests are answered: e.g.:
+- Expectancy: 
+  - No asserts are shown and tests are noted as "passed"
+  - Docker logs <container id> that depict requests are answered: e.g.:
     - ```192.168.65.1 - - [02/Jan/2024 10:42:19] "GET /reverse?in=The+quick+brown+fox+jumps+over+the+lazy+dog HTTP/1.1" 200```
     - ```192.168.65.1 - - [02/Jan/2024 10:42:19] "GET /restore HTTP/1.1" 200```
 
 ### Adding New Tests ###
- - you can easily add tests by adding methods to test_my_api.py. e.g.:
+ - You can easily add tests by adding methods to test_my_api.py.
+   e.g.:
    - ```def test_my_api()...:```
 
 ### Termination ###
