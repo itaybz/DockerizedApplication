@@ -5,8 +5,8 @@ The testing framework allows developers to easily add and run tests for the prov
 
 ### Requirements ###
 
-Tested on MAC OS in respect to HTTP port number 5000.
-This port is subject to be used in "Airdrop" service so you may want to disable it.
+Tested on MAC OS (14.2) in respect to HTTP port number 5000.
+This port is subject to be used as "Airdrop" service so you may want to disable it in order to execute along with port 5000
 
 ### Docker Container ###
 
