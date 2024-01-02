@@ -38,7 +38,7 @@ expectancy to get: {"result":"dog lazy the over jumps fox brown quick The"}
 
 ### Testing Framework ###
 - Requirements:
-  - Python
+  - Python 3.8
   - Docker
 
 
