@@ -59,3 +59,7 @@ The Docker container includes a Python HTTP application (app.py) with two REST A
   - docker logs <container id> that depict requests are answered: e.g.:
     - ```192.168.65.1 - - [02/Jan/2024 10:42:19] "GET /reverse?in=The+quick+brown+fox+jumps+over+the+lazy+dog HTTP/1.1" 200```
     - ```192.168.65.1 - - [02/Jan/2024 10:42:19] "GET /restore HTTP/1.1" 200```
+
+### Adding New Tests:
+ - you can easily add tests by adding methods to test_my_api.py. e.g.:
+   - ```def test_my_api()...:```
