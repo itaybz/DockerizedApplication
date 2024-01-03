@@ -67,4 +67,6 @@ The Docker container includes a Python HTTP application (app.py) with two REST A
    - ```def test_my_api()...:```
 
 ### Termination ###
-- Testing framework will automatically start the application container, run the tests, and shut down the container upon completion or in case of an error
+- For termination you need to stop the container manually by:
+  -  ```docker stop <container id>```
+  -  ```docker stop <container name>``` (if you specified explicit naming of the container when created
