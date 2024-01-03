@@ -69,4 +69,4 @@ The Docker container includes a Python HTTP application (app.py) with two REST A
 ### Termination ###
 - For termination you need to stop the container manually by:
   -  ```docker stop <container id>```
-  -  ```docker stop <container name>``` (if you specified explicit naming of the container when created
+  -  ```docker stop <container name>``` (if you specified explicit naming of the container when created)
